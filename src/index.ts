@@ -1,6 +1,7 @@
 import express from 'express'
+import { prisma } from './lib/prisma.js'
 
-const app= express()
+const app = express()
 
 const PORT = 3000;
 

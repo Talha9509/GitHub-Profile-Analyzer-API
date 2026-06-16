@@ -9,8 +9,8 @@ const PORT = 3000;
 
 // 1. Configure the Rate Limiter Middleware
 const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, 
-  limit: 100, 
+  windowMs: 60 * 60 * 1000, 
+  limit: 60, 
   message: {
     status: 429,
     message: "Too many requests from this IP, please try again after 15 minutes."

@@ -12,7 +12,6 @@ export const getAllProfiles = async (req: Request, res: Response) => {
 
 export const getProfile = async (req: Request, res: Response) => {
   const username = req.params.username
-  console.log(username)
   if(typeof username != "string"){
     return res.status(409).json({ message: "username is invalid" })
   }

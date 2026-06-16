@@ -1,0 +1,252 @@
+{
+  "info": {
+    "_postman_id": "6af6caeb-8331-4325-9115-cf4b8c4936d0",
+    "name": "GitHub Profile Analyzer API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "44772469",
+    "_collection_link": "https://go.postman.co/collection/44772469-6af6caeb-8331-4325-9115-cf4b8c4936d0?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "POST /api/analyze/:username",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/analyze/Talha9509",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "analyze",
+            "Talha9509"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "POST /api/analyze/:username",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/analyze/Talha9509",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "analyze",
+                "Talha9509"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "RateLimit-Policy",
+              "value": "100;w=900"
+            },
+            {
+              "key": "RateLimit",
+              "value": "limit=100, remaining=99, reset=900"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "203"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"cb-HE3IRejBgRaaDSlhqoRpAt0dBfw\""
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 16 Jun 2026 11:01:12 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"profile\": {\n        \"id\": 3,\n        \"username\": \"Talha9509\",\n        \"bio\": \"Full-Stack Developer\",\n        \"public_repos\": 27,\n        \"followers\": 0,\n        \"following\": 6,\n        \"total_stars\": 0,\n        \"top_language\": \"TypeScript\",\n        \"analyzed_at\": \"2026-06-16T11:01:11.751Z\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "GET /api/profiles/:username",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/profiles/Talha9509",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "profiles",
+            "Talha9509"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "GET /api/profiles/:username",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/profiles/Talha9509",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "profiles",
+                "Talha9509"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "RateLimit-Policy",
+              "value": "100;w=900"
+            },
+            {
+              "key": "RateLimit",
+              "value": "limit=100, remaining=98, reset=792"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "203"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"cb-HE3IRejBgRaaDSlhqoRpAt0dBfw\""
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 16 Jun 2026 11:02:58 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"profile\": {\n        \"id\": 3,\n        \"username\": \"Talha9509\",\n        \"bio\": \"Full-Stack Developer\",\n        \"public_repos\": 27,\n        \"followers\": 0,\n        \"following\": 6,\n        \"total_stars\": 0,\n        \"top_language\": \"TypeScript\",\n        \"analyzed_at\": \"2026-06-16T11:01:11.751Z\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "GET /api/profiles",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "GET /api/profiles",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/profiles",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "profiles"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "RateLimit-Policy",
+              "value": "100;w=900"
+            },
+            {
+              "key": "RateLimit",
+              "value": "limit=100, remaining=97, reset=736"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "392"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"188-4sgz+lOFT6rMbwd/Kjy8zscnIIE\""
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 16 Jun 2026 11:03:54 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"profiles\": [\n        {\n            \"id\": 3,\n            \"username\": \"Talha9509\",\n            \"bio\": \"Full-Stack Developer\",\n            \"public_repos\": 27,\n            \"followers\": 0,\n            \"following\": 6,\n            \"total_stars\": 0,\n            \"top_language\": \"TypeScript\",\n            \"analyzed_at\": \"2026-06-16T11:01:11.751Z\"\n        },\n        {\n            \"id\": 4,\n            \"username\": \"100xdevs-bootcamp-1\",\n            \"bio\": \"\",\n            \"public_repos\": 17,\n            \"followers\": 401,\n            \"following\": 0,\n            \"total_stars\": 126,\n            \"top_language\": \"TypeScript\",\n            \"analyzed_at\": \"2026-06-16T10:18:28.705Z\"\n        }\n    ]\n}"
+        }
+      ]
+    }
+  ]
+}

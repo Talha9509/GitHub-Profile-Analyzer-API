@@ -30,4 +30,4 @@ app.use((req,res,err) => {
 })
 
 
-module.exports = app;
+export default app;

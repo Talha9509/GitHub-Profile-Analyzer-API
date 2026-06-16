@@ -19,4 +19,6 @@ model github_profile {
   followers      Int
   following      Int
   total_stars    Int
+  top_language String?   
+  analyzed_at  DateTime @default(now()) @updatedAt 
 }

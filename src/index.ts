@@ -1,10 +1,25 @@
 import express from 'express'
 import AnalyzeRoutes from './routes/analyze.route.js'
 import ProfileRoutes from './routes/profile.route.js'
+import { rateLimit } from 'express-rate-limit'
 
 const app = express()
 
 const PORT = 3000;
+
+// 1. Configure the Rate Limiter Middleware
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, 
+  limit: 100, 
+  message: {
+    status: 429,
+    message: "Too many requests from this IP, please try again after 15 minutes."
+  },
+  standardHeaders: 'draft-7', 
+  legacyHeaders: false, 
+})
+
+app.use(limiter)
 
 app.use("/api/analyze", AnalyzeRoutes)
 app.use("/api/profiles", ProfileRoutes)
